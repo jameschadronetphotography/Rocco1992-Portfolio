@@ -1,0 +1,18 @@
+/assets/
+  /images/
+    /events-public-figures/
+    /commercial-brands/
+    /portraits-studio/
+    /nightlife-concerts/
+    /special-projects/
+_layouts/
+_includes/
+_data/
+index.html
+_config.yml
+galleries.md
+events-public-figures.md
+commercial-brands.md
+portraits-studio.md
+nightlife-concerts.md
+special-projects.md
