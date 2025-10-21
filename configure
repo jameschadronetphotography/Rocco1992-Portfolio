@@ -1,0 +1,17 @@
+title: "James Chadronet Photography"
+baseurl: ""  # leave empty for user.github.io/repo
+url: ""      # GitHub Pages fills this
+theme: null
+
+collections:
+  galleries:
+    output: true
+    permalink: /:name/
+
+defaults:
+  - scope: {path: "", type: "galleries"}
+    values:
+      layout: gallery
+
+# Build options
+markdown: kramdown
