@@ -1,0 +1,19 @@
+- key: events-public-figures
+  title: "Events & Public Figures"
+  folder: "assets/images/events-public-figures"
+
+- key: commercial-brands
+  title: "Commercial & Brands"
+  folder: "assets/images/commercial-brands"
+
+- key: portraits-studio
+  title: "Portraits & Studio"
+  folder: "assets/images/portraits-studio"
+
+- key: nightlife-concerts
+  title: "Nightlife & Concerts"
+  folder: "assets/images/nightlife-concerts"
+
+- key: special-projects
+  title: "Special Projects"
+  folder: "assets/images/special-projects"
