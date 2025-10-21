@@ -1,0 +1,20 @@
+---
+layout: default
+---
+{% assign gallery = site.data.galleries | where: "key", page.gallery_key | first %}
+<h1>{{ gallery.title }}</h1>
+<div class="breadcrumbs"><a href="{{ "/" | relative_url }}">Home</a> / {{ gallery.title }}</div>
+
+<div class="grid">
+  {%- comment -%}
+  Manually list filenames for now (recommended): create a text list in page front matter.
+  If you prefer auto, keep a simple convention like 01.jpg, 02.jpg... and list a range.
+  {%- endcomment -%}
+
+  {% for img in page.images %}
+    <div class="card">
+      <img src="{{ '/' | relative_url }}{{ gallery.folder }}/{{ img }}" alt="">
+      <div class="label">{{ page.captions[forloop.index0] | default: "" }}</div>
+    </div>
+  {% endfor %}
+</div>
