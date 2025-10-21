@@ -1,29 +1,52 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Rocco1992 Portfolio</title>
-  <link rel="stylesheet" href="styles.css" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>James Chadronet Photography</title>
+  <style>
+    :root { --bg:#0e0e0f; --panel:#141416; --stroke:#242428; --text:#eaeaea; --muted:#9a9aa1; }
+    *{box-sizing:border-box}
+    body{margin:0;background:var(--bg);color:var(--text);font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif}
+    header{padding:56px 24px;text-align:center}
+    h1{margin:0 0 8px;font-size:40px}
+    p.sub{margin:0;color:var(--muted)}
+    .wrap{max-width:1100px;margin:0 auto;padding:0 16px 40px}
+    .grid{display:grid;gap:14px;grid-template-columns:repeat(auto-fill,minmax(220px,1fr))}
+    .card{display:block;background:var(--panel);border:1px solid var(--stroke);border-radius:12px;overflow:hidden;text-decoration:none;color:inherit}
+    .thumb{width:100%;height:200px;object-fit:cover;background:#111}
+    .label{padding:12px 14px;font-weight:600}
+  </style>
 </head>
 <body>
-  <header class="hero">
+  <header>
     <h1>James Chadronet Photography</h1>
-    <p>Portraits. Nature. Studio.</p>
+    <p class="sub">Portraits. Nature. Studio.</p>
   </header>
 
-  <main>
-    <section class="gallery">
-      <a href="portraits/studio/alyssa"><div class="tile" style="background-image:url('images/alyssa.jpg')"><span>Alyssa</span></div></a>
-      <a href="portraits/studio/marcus"><div class="tile" style="background-image:url('images/marcus.jpg')"><span>Marcus</span></div></a>
-      <a href="portraits/studio/bianca"><div class="tile" style="background-image:url('images/bianca.jpg')"><span>Bianca</span></div></a>
-      <a href="nature/black-and-white"><div class="tile" style="background-image:url('images/blackwhite.jpg')"><span>Black & White</span></div></a>
-      <a href="nature/color"><div class="tile" style="background-image:url('images/color.jpg')"><span>Color</span></div></a>
-    </section>
-  </main>
-
-  <footer>
-    <p>&copy; 2025 James Chadronet</p>
-  </footer>
+  <div class="wrap">
+    <div class="grid">
+      <a class="card" href="events-public-figures/">
+        <img class="thumb" src="assets/images/events-public-figures/thumb.jpg" alt="">
+        <div class="label">Events & Public Figures</div>
+      </a>
+      <a class="card" href="commercial-brands/">
+        <img class="thumb" src="assets/images/commercial-brands/thumb.jpg" alt="">
+        <div class="label">Commercial & Brands</div>
+      </a>
+      <a class="card" href="portraits-studio/">
+        <img class="thumb" src="assets/images/portraits-studio/thumb.jpg" alt="">
+        <div class="label">Portraits & Studio</div>
+      </a>
+      <a class="card" href="nightlife-concerts/">
+        <img class="thumb" src="assets/images/nightlife-concerts/thumb.jpg" alt="">
+        <div class="label">Nightlife & Concerts</div>
+      </a>
+      <a class="card" href="special-projects/">
+        <img class="thumb" src="assets/images/special-projects/thumb.jpg" alt="">
+        <div class="label">Special Projects</div>
+      </a>
+    </div>
+  </div>
 </body>
 </html>
