@@ -1,0 +1,16 @@
+---
+layout: default
+title: Home
+---
+<h1>Portfolio</h1>
+<div class="grid">
+  {% for g in site.data.galleries %}
+    <a class="card" href="{{ '/' | relative_url }}{{ g.key }}/">
+      <img src="{{ '/' | relative_url }}{{ g.folder }}/thumb.jpg" alt="">
+      <div class="label">{{ g.title }}</div>
+    </a>
+  {% endfor %}
+</div>
+<p style="margin-top:16px; color:#9a9aa1;">
+  Tip: add a <code>thumb.jpg</code> in each folder for the card image.
+</p>
